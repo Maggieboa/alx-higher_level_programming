@@ -3,4 +3,4 @@ str ="""\
 The Zen of Python, by Tim Peters
 
 """
-print(str[:-1])
+print(str)
