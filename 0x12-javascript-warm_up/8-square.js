@@ -8,4 +8,6 @@ if (argv > 0) {
       process.stdout.write('X');
     } console.log('');
   }
+} else if (isNaN(argv)) {
+  console.log('Missing size');
 }
