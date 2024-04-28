@@ -1,13 +1,19 @@
 #!/usr/bin/node
-const a = Number(process.argv[2]);
+const b = Number(process.argv[2]);
 let i = 1;
 let x = 1;
-if (a > 0) {
-  while (i < a) {
-    i++;
-    x = x * i;
+const a = 0;
+function fact (a) {
+  if (a > 0) {
+    while (i < a) {
+      i++;
+      x = x * i;
+    }
+    console.log(x);
   }
-  console.log(x);
+}
+if (b > 0) {
+  fact(b);
 } else if (a === 0) {
   console.log('0');
 } else {
