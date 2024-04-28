@@ -15,7 +15,7 @@ function fact (a) {
 if (b > 0) {
   fact(b);
 } else if (a === 0) {
-  console.log('0');
-} else {
+  console.log('1');
+} else if (isNaN(a)) {
   console.log('1');
 }
