@@ -4,6 +4,6 @@ const x = args.length - 2;
 if (args.length > 1) {
   args.sort();
   console.log(args[x]);
-} else if (args.length < 1) {
+} else if (args.length < 2) {
   console.log('0');
 }
