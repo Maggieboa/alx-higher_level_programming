@@ -11,8 +11,8 @@ class Rectangle {
   }
 
   print () {
-    for (; x < this.width; x++) {
-      while (y < this.height) {
+    for (; x < this.height; x++) {
+      while (y < this.width) {
         xy += 'X';
         y++;
       }
