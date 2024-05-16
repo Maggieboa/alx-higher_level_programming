@@ -25,5 +25,9 @@ class Square extends Rectangle {
   double () {
     this.size = this.size * 2;
   }
+
+  rotate () {
+    thi.size = this.size;
+  }
 }
 module.exports = Square;
