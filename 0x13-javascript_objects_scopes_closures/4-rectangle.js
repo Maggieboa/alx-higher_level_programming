@@ -1,7 +1,4 @@
-#!/usr/bin/node
-let x = 0;
-let y = 0;
-let xy = '';
+#!/usr/bin/nod
 class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0 && typeof w === 'number' && typeof h === 'number') {
@@ -11,7 +8,9 @@ class Rectangle {
   }
 
   print () {
-    for (; x < this.height; x++) {
+    for (let x = 0; x < this.height; x++) {
+      let y = 0;
+      let xy = '';
       while (y < this.width) {
         xy += 'X';
         y++;
@@ -21,15 +20,16 @@ class Rectangle {
   }
 
   rotate () {
-    let tempw = 0;
-    tempw = this.width;
+    const tempw = this.width;
     this.width = this.height;
     this.height = tempw;
   }
 
   double () {
-    this.width *= 2;
-    this.height *= 2;
+    const tempw = this.width * 2;
+    const temph = this.height * 2;
+    this.width = tempw;
+    this.height = temph;
   }
 }
 module.exports = Rectangle;
